@@ -1,0 +1,242 @@
+/* ==========================================================================
+   Section Shared Styles
+   ========================================================================== */
+.section-subtitle {
+    display: block;
+    color: var(--primary-green);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+/* ==========================================================================
+   Quick Info Cards (Overlap Hero)
+   ========================================================================== */
+.quick-info {
+    padding: 0;
+    margin-top: -80px;
+    /* Pull up to overlap hero */
+    position: relative;
+    z-index: 10;
+}
+
+.quick-info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.info-card {
+    background-color: var(--white);
+    padding: 40px 30px;
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: flex-start;
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card:nth-child(2) {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.info-card:nth-child(2) h3 {
+    color: var(--white);
+}
+
+.info-card:nth-child(2) .info-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+}
+
+.info-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-bg);
+    color: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.info-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.info-content p {
+    margin-bottom: 0;
+    font-size: 15px;
+    color: inherit;
+    opacity: 0.8;
+}
+
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+.about-section {
+    padding: 100px 0;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image-wrapper {
+    position: relative;
+    border-radius: var(--radius-lg);
+}
+
+.about-main-img {
+    border-radius: var(--radius-lg);
+    width: 100%;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 8px solid var(--white);
+}
+
+.exp-number {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    line-height: 1;
+}
+
+.exp-text {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    line-height: 1.2;
+}
+
+.about-desc {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.about-features {
+    margin-bottom: 40px;
+}
+
+.about-features li {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.about-features li i {
+    color: var(--primary-green);
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/* ==========================================================================
+   Statistics Bar
+   ========================================================================== */
+.stats-bar {
+    padding: 60px 0;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 30px;
+}
+
+.stat-number {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+/* Responsive Overrides */
+@media (max-width: 1199px) {
+    .quick-info-container {
+        gap: 20px;
+    }
+
+    .info-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .quick-info-container {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-info {
+        margin-top: -40px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .experience-badge {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 32px;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+}

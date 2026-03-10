@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Dr. Usha Chandra</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-components.css">
+    <link rel="stylesheet" href="styles-services.css">
+    <link rel="stylesheet" href="styles-footer.css">
+    <link rel="stylesheet" href="interior-pages.css">
+    <style>
+        .contact-page-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 991px) {
+            .contact-page-info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-form-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--light-bg);
+            padding: 50px;
+            border-radius: var(--radius-lg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-primary);
+            font-size: 16px;
+            background-color: var(--white);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-green);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header interior-header scrolled">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Assets/logo-tranprante.png" alt="Dermal Logo" class="logo-img dark-logo">
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctor.html">Doctor</a></li>
+                    <li><a href="contact.html" style="color:var(--heading-color); font-weight:700;">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-action">
+                <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+                <button class="mobile-menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner">
+            <div class="container page-banner-container">
+                <h1 class="page-title">Get in Touch</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator"><i class="fa-solid fa-chevron-right"></i></span>
+                    <span>Contact Us</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timings & Clinics Section -->
+        <section id="clinics" class="clinics-section section-bg-light" style="padding-top: 100px;">
+            <div class="container">
+                <div class="section-title-wrapper text-center">
+                    <span class="section-subtitle text-center">Our Locations</span>
+                    <h2 class="section-title text-center">Visit our specialized skin care clinics</h2>
+                </div>
+
+                <div class="contact-page-info">
+                    <div class="info-card" style="box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-content">
+                            <h3>Contact Us</h3>
+                            <p>+91 9580392068<br>+91 7388687902</p>
+                        </div>
+                    </div>
+                    <div class="info-card" style="box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>info@drushachandra.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card" style="box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                        <div class="info-content">
+                            <h3>Working Hours</h3>
+                            <p>Sitapur: Mon & Thu<br>Shahjahanpur: Tue, Wed, Fri</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinics-grid">
+                    <!-- Clinic 1 -->
+                    <div class="clinic-card">
+                        <div class="clinic-content">
+                            <h3>Varnika Skin Wellness Center</h3>
+                            <p class="clinic-address"><i class="fa-solid fa-map-location-dot"></i> Taran Taal Road,
+                                Civil Lines, Prem Nagar, Sitapur, Uttar Pradesh</p>
+
+                            <div class="clinic-timings">
+                                <h4><i class="fa-regular fa-clock"></i> Consultation Timings</h4>
+                                <ul>
+                                    <li><span>Monday & Thursday:</span> 11:00 AM – 3:00 PM</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://share.google/vpSQpjPei2lK8lJgU" target="_blank" class="btn btn-outline"
+                                style="margin-top: 20px; display: block;">View on Google Maps</a>
+                        </div>
+                    </div>
+
+                    <!-- Clinic 2 -->
+                    <div class="clinic-card">
+                        <div class="clinic-content">
+                            <h3>Shri Balaji Skin Care Clinic</h3>
+                            <p class="clinic-address"><i class="fa-solid fa-map-location-dot"></i> Kuchha Kathara, Tera,
+                                Shahjahanpur, Uttar Pradesh</p>
+
+                            <div class="clinic-timings">
+                                <h4><i class="fa-regular fa-clock"></i> Consultation Timings</h4>
+                                <ul>
+                                    <li><span>Tue, Wed, Fri:</span> Contact for appointment</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://share.google/dApdpS9RQ8OkcDSBr" target="_blank" class="btn btn-outline"
+                                style="margin-top: 20px; display: block;">View on Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="section-title-wrapper text-center">
+                    <span class="section-subtitle text-center">Send a Message</span>
+                    <h2 class="section-title text-center">Request an Appointment Callback</h2>
+                </div>
+
+                <div class="form-container">
+                    <form id="appointmentForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name *"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" id="phone" class="form-control"
+                                    placeholder="Phone Number *" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <select name="clinic" id="clinic" class="form-control" required>
+                                <option value="" disabled selected>Select Preferred Clinic *</option>
+                                <option value="Sitapur">Sitapur - Varnika Skin Wellness Center</option>
+                                <option value="Shahjahanpur">Shahjahanpur - Shri Balaji Skin Care</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control"
+                                placeholder="Briefly describe your skin or hair concern (Optional)"></textarea>
+                        </div>
+                        <button type="submit" id="submitBtn" class="btn btn-primary"
+                            style="width: 100%; justify-content: center;">Submit Request</button>
+                        <div id="formMessage"
+                            style="margin-top: 15px; text-align: center; display: none; font-weight: 500;"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container footer-container">
+                <div class="footer-col brand-col">
+                    <img src="Assets/logo-white.png" alt="Dermal Logo" class="footer-logo">
+                    <p>Expert dermatology care tailored to your unique skin and hair needs by Dr. Usha Chandra, Board
+                        Certified Dermatologist.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col links-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctor.html">About Dr. Usha</a></li>
+                        <li><a href="services.html">Treatments</a></li>
+                        <li><a href="contact.html">Clinic Locations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col services-col">
+                    <h3>Top Services</h3>
+                    <ul>
+                        <li><a href="services.html">Acne & Pimples</a></li>
+                        <li><a href="services.html">Pigmentation</a></li>
+                        <li><a href="services.html">Hair Fall Treatment</a></li>
+                        <li><a href="services.html">Anti-Aging</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h3>Book Appointment</h3>
+                    <p>Ready to improve your skin health? Call us today to schedule your consultation.</p>
+                    <div class="footer-contact-info">
+                        <p><i class="fa-solid fa-phone"></i> +91 9580392068</p>
+                        <p><i class="fa-solid fa-phone"></i> +91 7388687902</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Dr. Usha Chandra Dermatology Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Usha Chandra | Dermatology & Skin Wellness Center</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-components.css">
+    <link rel="stylesheet" href="styles-services.css">
+    <link rel="stylesheet" href="styles-footer.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Using the white logo due to dark header background as seen on dermal theme -->
+                <img src="Assets/logo-tranprante.png" alt="Dermal Logo" class="logo-img dark-logo">
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctor.html">Doctor</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-action">
+                <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+                <button class="mobile-menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-video-wrapper">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="Assets/dermal-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="container hero-content">
+                <span class="hero-subtitle">✨ Advanced Care for Skin, Hair & Aesthetic Treatments ✨</span>
+                <h1 class="hero-title">Comprehensive care for your skin's health and beauty</h1>
+                <p class="hero-desc">Expert dermatology services tailored to your unique needs by Dr. Usha Chandra,
+                    Board Certified Dermatologist.</p>
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary">View Our Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Info Banner -->
+        <section class="quick-info">
+            <div class="container quick-info-container">
+                <div class="info-card">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-content">
+                        <h3>Contact Us</h3>
+                        <p>+91 9580392068<br>+91 7388687902</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info-content">
+                        <h3>Our Locations</h3>
+                        <p>Sitapur & Shahjahanpur,<br>Uttar Pradesh</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                    <div class="info-content">
+                        <h3>Working Hours</h3>
+                        <p>Sitapur: Mon & Thu<br>Shahjahanpur: Tue, Wed, Fri</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-bg-light">
+            <div class="container about-container">
+                <div class="about-image-wrapper">
+                    <!-- Using one of the provided images, assuming it looks clinical. -->
+                    <img src="Assets/about-image-1.jpg" alt="Dr. Usha Chandra" class="about-main-img">
+                    <div class="experience-badge">
+                        <span class="exp-number">15+</span>
+                        <span class="exp-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-subtitle">About Our Clinic</span>
+                    <h2 class="section-title">Why choose us for all your dermatology needs</h2>
+                    <p class="about-desc">Dr. Usha Chandra is a highly respected, Board Certified Dermatologist with
+                        immense experience. She holds an M.B.B.S. and M.D. from B.H.U. and has served as a Former
+                        Physician at K.G.M.U. (Lucknow) and L.L.R.M. (Meerut).</p>
+
+                    <ul class="about-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Advanced Care for Skin & Hair</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Personalized Aesthetic Treatments</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Expert in Pigmentation & Anti-Aging</li>
+                    </ul>
+
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary">Book Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Banner -->
+        <section class="stats-bar section-bg-dark">
+            <div class="container stats-container">
+                <div class="stat-item">
+                    <h3 class="stat-number">15+</h3>
+                    <p class="stat-label">Years of Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">2</h3>
+                    <p class="stat-label">Clinic Locations</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">100%</h3>
+                    <p class="stat-label">Patient Satisfaction</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">Board</h3>
+                    <p class="stat-label">Certified Dermatologist</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-title-wrapper text-center">
+                    <span class="section-subtitle text-center">Our Treatments</span>
+                    <h2 class="section-title text-center">Comprehensive dermatology services for every skin need</h2>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <img src="Assets/imgi_8_service-image-1.jpg" alt="Acne Treatment" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-droplet"></i></div>
+                            <h3>Acne & Pimples</h3>
+                            <p>Advanced treatments for acne, pimples, and stubborn acne scars to restore clear skin.</p>
+                            <a href="#contact" class="service-link">Consult Now <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <img src="Assets/imgi_9_service-image-2.jpg" alt="Pigmentation" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-sun"></i></div>
+                            <h3>Pigmentation & Melasma</h3>
+                            <p>Effective solutions for dark spots, uneven skin tone, and melasma treatment.</p>
+                            <a href="#contact" class="service-link">Consult Now <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <img src="Assets/service-image-3.jpg" alt="Hair Fall" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+                            <h3>Hair Fall & Dandruff</h3>
+                            <p>Comprehensive therapies to stop hair fall, treat dandruff, and promote hair regrowth.</p>
+                            <a href="#contact" class="service-link">Consult Now <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <img src="Assets/service-image-4.jpg" alt="Anti-Aging" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <h3>Anti-Aging & Rejuvenation</h3>
+                            <p>Medical-grade anti-aging treatments and skin rejuvenation therapies.</p>
+                            <a href="#contact" class="service-link">Consult Now <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <!-- Reusing an image or using placeholder logic, using 5 here -->
+                            <img src="Assets/service-image-5.jpg" alt="Skin Allergies" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-virus"></i></div>
+                            <h3>Infections & Allergies</h3>
+                            <p>Expert diagnosis and care for fungal infections, skin allergies, and diseases.</p>
+                            <a href="#contact" class="service-link">Consult Now <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <img src="Assets/imgi_7_service-image-6.jpg" alt="Chemical Peels" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-flask"></i></div>
+                            <h3>Chemical Peels</h3>
+                            <p>Advanced chemical peels to exfoliate, brighten, and treat various skin concerns.</p>
+                            <a href="#contact" class="service-link">Consult Now <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits/Features Section -->
+        <section class="benefits-section section-bg-dark">
+            <div class="container">
+                <div class="section-title-wrapper text-center">
+                    <span class="section-subtitle" style="color:var(--white); opacity:0.8;">Our Benefits</span>
+                    <h2 class="section-title text-center" style="color:var(--white);">Dedicated care for all skin types
+                    </h2>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-col">
+                        <div class="benefit-item">
+                            <div class="benefit-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                            <div class="benefit-info">
+                                <h3>Expert Care</h3>
+                                <p>Treated by a highly qualified & experienced specialist.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                            <div class="benefit-info">
+                                <h3>Accurate Diagnosis</h3>
+                                <p>Thorough evaluation for precise medical & aesthetic treatments.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefit-center-image">
+                        <img src="Assets/service-image-3.jpg" class="circle-image" alt="Healthy Skin">
+                    </div>
+
+                    <div class="benefit-col">
+                        <div class="benefit-item">
+                            <div class="benefit-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                            <div class="benefit-info">
+                                <h3>Customized Plans</h3>
+                                <p>Tailored treatment plans for your specific skin and hair goals.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                            <div class="benefit-info">
+                                <h3>Patient Focus</h3>
+                                <p>Compassionate care prioritizing patient comfort and satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timings & Clinics Section -->
+        <section id="clinics" class="clinics-section section-bg-light">
+            <div class="container">
+                <div class="section-title-wrapper text-center">
+                    <span class="section-subtitle text-center">Our Locations</span>
+                    <h2 class="section-title text-center">Visit our specialized skin care clinics</h2>
+                </div>
+
+                <div class="clinics-grid">
+                    <!-- Clinic 1 -->
+                    <div class="clinic-card">
+                        <div class="clinic-content">
+                            <h3>Varnika Skin Wellness Center</h3>
+                            <p class="clinic-address"><i class="fa-solid fa-map-location-dot"></i> Taran Taal Road,
+                                Civil Lines, Prem Nagar, Sitapur, Uttar Pradesh</p>
+
+                            <div class="clinic-timings">
+                                <h4><i class="fa-regular fa-clock"></i> Consultation Timings</h4>
+                                <ul>
+                                    <li><span>Monday & Thursday:</span> 11:00 AM – 3:00 PM</li>
+                                </ul>
+                            </div>
+
+                            <div class="clinic-contact">
+                                <h4><i class="fa-solid fa-phone"></i> Contact</h4>
+                                <p>9580392068, 7388687902</p>
+                            </div>
+
+                            <a href="https://share.google/vpSQpjPei2lK8lJgU" target="_blank" class="btn btn-outline"
+                                style="margin-top: 20px; display: block;">View on Google Maps</a>
+                        </div>
+                    </div>
+
+                    <!-- Clinic 2 -->
+                    <div class="clinic-card">
+                        <div class="clinic-content">
+                            <h3>Shri Balaji Skin Care Clinic</h3>
+                            <p class="clinic-address"><i class="fa-solid fa-map-location-dot"></i> Kuchha Kathara, Tera,
+                                Shahjahanpur, Uttar Pradesh</p>
+
+                            <div class="clinic-timings">
+                                <h4><i class="fa-regular fa-clock"></i> Consultation Timings</h4>
+                                <ul>
+                                    <li><span>Tue, Wed, Fri:</span> Contact for appointment</li>
+                                </ul>
+                            </div>
+
+                            <div class="clinic-contact">
+                                <h4><i class="fa-solid fa-phone"></i> Contact</h4>
+                                <p>9580392068, 7388687902</p>
+                            </div>
+
+                            <a href="https://share.google/dApdpS9RQ8OkcDSBr" target="_blank" class="btn btn-outline"
+                                style="margin-top: 20px; display: block;">View on Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-top">
+            <div class="container footer-container">
+                <div class="footer-col brand-col">
+                    <img src="Assets/logo-white.png" alt="Dermal Logo" class="footer-logo">
+                    <p>Expert dermatology care tailored to your unique skin and hair needs by Dr. Usha Chandra, Board
+                        Certified Dermatologist.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col links-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctor.html">About Dr. Usha</a></li>
+                        <li><a href="services.html">Treatments</a></li>
+                        <li><a href="contact.html">Clinic Locations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col services-col">
+                    <h3>Top Services</h3>
+                    <ul>
+                        <li><a href="services.html">Acne & Pimples</a></li>
+                        <li><a href="services.html">Pigmentation</a></li>
+                        <li><a href="services.html">Hair Fall Treatment</a></li>
+                        <li><a href="services.html">Anti-Aging</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h3>Book Appointment</h3>
+                    <p>Ready to improve your skin health? Call us today to schedule your consultation.</p>
+                    <div class="footer-contact-info">
+                        <p><i class="fa-solid fa-phone"></i> +91 9580392068</p>
+                        <p><i class="fa-solid fa-phone"></i> +91 7388687902</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Dr. Usha Chandra Dermatology Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
