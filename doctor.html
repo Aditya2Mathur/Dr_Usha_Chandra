@@ -65,48 +65,140 @@
             </div>
         </section>
 
-        <!-- About Section styled as a Profile -->
-        <section class="about-section" style="padding-top: 80px;">
-            <div class="container about-container" style="align-items: flex-start;">
-                <div class="about-image-wrapper">
-                    <!-- Assuming this is a good doctor profile image location -->
-                    <img src="Assets/about-image-1.jpg" alt="Dr. Usha Chandra" class="about-main-img">
-                    <div class="experience-badge">
-                        <span class="exp-number">15+</span>
-                        <span class="exp-text">Years of<br>Experience</span>
+        <!-- Doctor Profile Section (Redesigned) -->
+        <section class="doctor-profile-section" style="padding-top: 80px; padding-bottom: 80px;">
+            <div class="container">
+                <!-- Top Section: Image + Info -->
+                <div class="doc-profile-grid"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; margin-bottom: 60px;">
+                    <!-- Left: Image -->
+                    <div class="doc-image-wrapper" data-aos="fade-right">
+                        <img src="Assets/about-image-1.jpg" alt="Dr. Usha Chandra"
+                            style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 15px 40px rgba(0,0,0,0.1);">
+                    </div>
+
+                    <!-- Right: Info -->
+                    <div class="doc-info-wrapper" data-aos="fade-left">
+                        <h3 style="font-size: 36px; font-weight: 600; margin-bottom: 20px;">About me</h3>
+                        <p style="font-size: 18px; color: var(--text-color); margin-bottom: 30px;">Dr. Usha Chandra is a
+                            leading dermatologist known for her expertise in both clinical dermatology and advanced
+                            aesthetic procedures. With a compassionate approach, she is deeply committed to helping
+                            patients achieve their healthiest skin utilizing the latest advancements in dermatological
+                            science.</p>
+
+                        <!-- Details Grid -->
+                        <div class="doc-details-grid"
+                            style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; padding-top: 30px; border-top: 1px solid var(--border-color);">
+                            <div class="info-item">
+                                <h5
+                                    style="font-size: 16px; color: var(--primary-green); margin-bottom: 5px; font-weight: 600;">
+                                    Position</h5>
+                                <p style="margin: 0; font-size: 16px; font-weight: 500;">Board Certified Dermatologist
+                                </p>
+                            </div>
+                            <div class="info-item">
+                                <h5
+                                    style="font-size: 16px; color: var(--primary-green); margin-bottom: 5px; font-weight: 600;">
+                                    Email Address</h5>
+                                <p style="margin: 0; font-size: 16px; font-weight: 500;">info@varnikahealthcare.com</p>
+                            </div>
+                            <div class="info-item">
+                                <h5
+                                    style="font-size: 16px; color: var(--primary-green); margin-bottom: 5px; font-weight: 600;">
+                                    Experience</h5>
+                                <p style="margin: 0; font-size: 16px; font-weight: 500;">15+ Years</p>
+                            </div>
+                            <div class="info-item">
+                                <h5
+                                    style="font-size: 16px; color: var(--primary-green); margin-bottom: 5px; font-weight: 600;">
+                                    Contact Number</h5>
+                                <p style="margin: 0; font-size: 16px; font-weight: 500;">+91 9580392068</p>
+                            </div>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="team-social-icon" style="display: flex; gap: 15px;">
+                            <a href="#" class="team-social-btn"
+                                style="width: 45px; height: 45px; border-radius: 5px; background: var(--light-bg); color: var(--primary-green); display: flex; align-items: center; justify-content: center; font-size: 18px; transition: var(--transition);"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="team-social-btn"
+                                style="width: 45px; height: 45px; border-radius: 5px; background: var(--light-bg); color: var(--primary-green); display: flex; align-items: center; justify-content: center; font-size: 18px; transition: var(--transition);"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="team-social-btn"
+                                style="width: 45px; height: 45px; border-radius: 5px; background: var(--light-bg); color: var(--primary-green); display: flex; align-items: center; justify-content: center; font-size: 18px; transition: var(--transition);"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="about-content">
-                    <span class="section-subtitle">Board Certified Dermatologist</span>
-                    <h2 class="section-title">Dr. Usha Chandra</h2>
 
-                    <div style="margin-bottom: 30px; border-left: 3px solid var(--accent-green); padding-left: 20px;">
-                        <h4 style="margin-bottom: 5px; color: var(--primary-green);">Qualifications:</h4>
-                        <p style="margin: 0; font-weight: 500; font-size: 18px;">M.B.B.S., M.D. (B.H.U.)</p>
-                        <p style="margin: 0; color: #666;">Former Physician K.G.M.U. (Lucknow) & L.L.R.M. (Meerut)</p>
+                <!-- Bottom Section: Expertise -->
+                <div class="doc-expertise-grid"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; background: var(--light-bg); padding: 50px; border-radius: var(--radius-lg);"
+                    data-aos="fade-up">
+                    <div class="expertise-left">
+                        <h3 style="font-size: 32px; font-weight: 600; margin-bottom: 20px;">Know about Dr. Usha Chandra
+                        </h3>
+                        <p style="margin-bottom: 20px;">She brings a wealth of knowledge and a compassionate approach to
+                            patient care. Her approach focuses on accurate diagnosis, personalized treatment plans, and
+                            long-term skin health management. </p>
+                        <p style="margin-bottom: 0;"><strong>Qualifications:</strong> M.B.B.S., M.D. (B.H.U.). Former
+                            Physician K.G.M.U. (Lucknow) & L.L.R.M. (Meerut).</p>
                     </div>
-
-                    <p class="about-desc">Dr. Usha Chandra is a leading dermatologist known for her expertise in both
-                        clinical dermatology and advanced aesthetic procedures. With over 15 years of dedicated
-                        experience in the field, she brings a wealth of knowledge and a compassionate approach to
-                        patient care.</p>
-
-                    <p class="about-desc">She is deeply committed to helping her patients achieve their healthiest skin,
-                        utilizing the latest advancements in dermatological science. Her approach focuses on accurate
-                        diagnosis, personalized treatment plans, and long-term skin health management.</p>
-
-                    <h4 style="margin-top: 30px; margin-bottom: 15px;">Areas of Expertise:</h4>
-                    <ul class="about-features" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                        <li><i class="fa-solid fa-circle-check"></i> Acne & Scar Revision</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Clinical Dermatology</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Clinical Cosmetics</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Anti-Aging Therapies</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Trichology (Hair Disorders)</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Laser Treatments</li>
-                    </ul>
-
-                    <div class="about-actions" style="margin-top: 40px;">
-                        <a href="contact.html" class="btn btn-primary">Book an Appointment</a>
+                    <div class="expertise-right">
+                        <h3 style="font-size: 32px; font-weight: 600; margin-bottom: 30px;">My expertise</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar" style="margin-bottom: 25px;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--heading-color);">Clinical
+                                        Dermatology</span>
+                                    <span style="font-weight: 600; color: var(--primary-green);">95%</span>
+                                </div>
+                                <div class="progress"
+                                    style="height: 6px; background: #E2DFDD; border-radius: 10px; overflow: hidden;">
+                                    <div class="bar"
+                                        style="width: 95%; height: 100%; background: var(--primary-green); border-radius: 10px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar" style="margin-bottom: 25px;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--heading-color);">Aesthetic
+                                        Procedures</span>
+                                    <span style="font-weight: 600; color: var(--primary-green);">90%</span>
+                                </div>
+                                <div class="progress"
+                                    style="height: 6px; background: #E2DFDD; border-radius: 10px; overflow: hidden;">
+                                    <div class="bar"
+                                        style="width: 90%; height: 100%; background: var(--primary-green); border-radius: 10px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar" style="margin-bottom: 25px;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--heading-color);">Acne & Scar
+                                        Revision</span>
+                                    <span style="font-weight: 600; color: var(--primary-green);">92%</span>
+                                </div>
+                                <div class="progress"
+                                    style="height: 6px; background: #E2DFDD; border-radius: 10px; overflow: hidden;">
+                                    <div class="bar"
+                                        style="width: 92%; height: 100%; background: var(--primary-green); border-radius: 10px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                    <span style="font-weight: 600; color: var(--heading-color);">Laser Treatments</span>
+                                    <span style="font-weight: 600; color: var(--primary-green);">88%</span>
+                                </div>
+                                <div class="progress"
+                                    style="height: 6px; background: #E2DFDD; border-radius: 10px; overflow: hidden;">
+                                    <div class="bar"
+                                        style="width: 88%; height: 100%; background: var(--primary-green); border-radius: 10px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,126 +228,141 @@
     </main>
 
     <!-- Footer -->
-    <footer id="contact" class="footer" style="border-radius: 20px 20px 0 0; margin-top: 50px;">
-        <!-- Background SVG Decorations -->
-        <svg class="bg-shape shape-leaf" style="bottom: 0; left: 0; opacity: 0.1; width: 150px; height: 150px;"
-            viewBox="0 0 24 24" fill="none" stroke="var(--white)" stroke-width="1">
-            <path d="M12 2C8 2 4 6 4 12c0 6 8 10 8 10s8-4 8-10C20 6 16 2 12 2z" />
-        </svg>
-        <svg class="bg-shape shape-leaf"
-            style="top: 0; right: 0; opacity: 0.1; width: 150px; height: 150px; transform: scaleX(-1);"
-            viewBox="0 0 24 24" fill="none" stroke="var(--white)" stroke-width="1">
-            <path d="M12 2C8 2 4 6 4 12c0 6 8 10 8 10s8-4 8-10C20 6 16 2 12 2z" />
-        </svg>
+    <div class="container footer-wrapper" style="padding-bottom: 30px; margin-top: 50px;">
+        <footer id="contact" class="footer" style="border-radius: 30px;">
+            <!-- Background SVG Decorations -->
+            <svg class="bg-shape shape-leaf" style="bottom: 0; left: 0; opacity: 0.1; width: 150px; height: 150px;"
+                viewBox="0 0 24 24" fill="none" stroke="var(--white)" stroke-width="1">
+                <path d="M12 2C8 2 4 6 4 12c0 6 8 10 8 10s8-4 8-10C20 6 16 2 12 2z" />
+            </svg>
+            <svg class="bg-shape shape-leaf"
+                style="top: 0; right: 0; opacity: 0.1; width: 150px; height: 150px; transform: scaleX(-1);"
+                viewBox="0 0 24 24" fill="none" stroke="var(--white)" stroke-width="1">
+                <path d="M12 2C8 2 4 6 4 12c0 6 8 10 8 10s8-4 8-10C20 6 16 2 12 2z" />
+            </svg>
 
-        <div class="footer-top">
-            <div class="container footer-container">
-                <!-- Brand & Subscribe Column -->
-                <div class="footer-col brand-col">
-                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                        <img src="Assets/logo-white.png" alt="Dermal Logo" class="footer-logo"
-                            style="margin-bottom: 0; margin-right: 15px; height: 40px; background: white; border-radius: 50%; padding: 5px;">
-                        <h2
-                            style="color: white; margin: 0; font-family: var(--font-body); font-size: 24px; font-weight: 700;">
-                            Dermal.</h2>
-                    </div>
-                    <p style="font-size: 14px; opacity: 0.9; margin-bottom: 25px; line-height: 1.6;">With a passion for
-                        skin health, Dermal combines the latest technologies.</p>
-
-                    <div class="subscribe-form"
-                        style="display: flex; background: white; border-radius: 8px; padding: 5px; max-width: 300px;">
-                        <input type="email" placeholder="Enter your email"
-                            style="border: none; outline: none; padding: 10px 15px; width: 100%; border-radius: 5px; font-family: var(--font-body);">
-                        <button type="button"
-                            style="background: var(--primary-green); color: white; border: none; border-radius: 5px; width: 45px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Contact Us Column -->
-                <div class="footer-col contact-col-new">
-                    <h3
-                        style="font-family: var(--font-heading); font-size: 18px; margin-bottom: 25px; font-weight: 500;">
-                        Contact Us</h3>
-
-                    <div class="footer-contact-item"
-                        style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-                        <div class="fc-icon"
-                            style="background: white; color: var(--primary-green); width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
-                            <i class="fa-solid fa-phone-volume"></i>
+            <div class="footer-top">
+                <div class="container footer-container">
+                    <!-- Brand & Subscribe Column -->
+                    <div class="footer-col brand-col">
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <img src="Assets/logo-white.png" alt="Varnika Logo" class="footer-logo"
+                                style="margin-bottom: 0; margin-right: 15px; height: 40px; background: white; border-radius: 5px; padding: 5px;">
                         </div>
+                        <p style="font-size: 14px; opacity: 0.9; margin-bottom: 25px; line-height: 1.6;">With a passion
+                            for
+                            skin health, Varnika Healthcare combines the latest technologies.</p>
+
+                        <div class="subscribe-form"
+                            style="display: flex; background: white; border-radius: 8px; padding: 5px; max-width: 300px;">
+                            <input type="email" placeholder="Enter your email"
+                                style="border: none; outline: none; padding: 10px 15px; width: 100%; border-radius: 5px; font-family: var(--font-body);">
+                            <button type="button"
+                                style="background: var(--primary-green); color: white; border: none; border-radius: 5px; width: 45px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Contact Us Column -->
+                    <div class="footer-col contact-col-new">
+                        <h3
+                            style="font-family: var(--font-heading); font-size: 18px; margin-bottom: 25px; font-weight: 500;">
+                            Contact Us</h3>
+
+                        <div class="footer-contact-item"
+                            style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                            <div class="fc-icon"
+                                style="background: white; color: var(--primary-green); width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span style="margin-bottom: 2px; font-size: 14px; color: white; display: block;">For
+                                    more information</span>
+                                <span
+                                    style="margin-bottom: 0; font-size: 13px; font-weight: 600; font-family: var(--font-body);">+91
+                                    9580392068</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-contact-item" style="display: flex; align-items: flex-start;">
+                            <div class="fc-icon"
+                                style="background: white; color: var(--primary-green); width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div>
+                                <span
+                                    style="margin-bottom: 2px; font-size: 14px; color: white; display: block;">Emergency
+                                    toll free no</span>
+                                <span
+                                    style="margin-bottom: 0; font-size: 13px; font-weight: 600; font-family: var(--font-body);">+91
+                                    7388687902</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Get In Touch Column -->
+                    <div class="footer-col address-col">
+                        <h3
+                            style="font-family: var(--font-heading); font-size: 18px; margin-bottom: 25px; font-weight: 500;">
+                            Get In Touch</h3>
+
+                        <div style="margin-bottom: 20px;">
+                            <span
+                                style="font-size: 15px; font-weight: 600; margin-bottom: 5px; display: block; color: white;">Location</span>
+                            <span style="font-size: 13px; opacity: 0.9; line-height: 1.5; display: block;">Sitapur &amp;
+                                Shahjahanpur,<br>Uttar Pradesh</span>
+                        </div>
+
                         <div>
-                            <p style="margin-bottom: 2px; font-size: 15px; color: white;">For more information</p>
-                            <p style="margin-bottom: 0; font-size: 14px; opacity: 0.8;">+91 9580392068</p>
+                            <span
+                                style="font-size: 15px; font-weight: 600; margin-bottom: 5px; display: block; color: white;">Email</span>
+                            <span
+                                style="font-size: 13px; opacity: 0.9; display: block;">info@varnikahealthcare.com</span>
                         </div>
                     </div>
 
-                    <div class="footer-contact-item" style="display: flex; align-items: flex-start;">
-                        <div class="fc-icon"
-                            style="background: white; color: var(--primary-green); width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
-                            <i class="fa-solid fa-headset"></i>
-                        </div>
-                        <div>
-                            <p style="margin-bottom: 2px; font-size: 15px; color: white;">Emergency toll free no</p>
-                            <p style="margin-bottom: 0; font-size: 14px; opacity: 0.8;">+91 7388687902</p>
-                        </div>
+                    <!-- Quick Links Column -->
+                    <div class="footer-col links-col">
+                        <h3
+                            style="font-family: var(--font-heading); font-size: 18px; margin-bottom: 25px; font-weight: 500;">
+                            Quick Link</h3>
+                        <ul style="font-size: 14px; opacity: 0.9;">
+                            <li style="margin-bottom: 12px;"><a href="index.html"
+                                    style="color: inherit; text-decoration: none;">Home</a></li>
+                            <li style="margin-bottom: 12px;"><a href="about.html"
+                                    style="color: inherit; text-decoration: none;">About Us</a></li>
+                            <li style="margin-bottom: 12px;"><a href="services.html"
+                                    style="color: inherit; text-decoration: none;">Services</a></li>
+                            <li style="margin-bottom: 12px;"><a href="contact.html"
+                                    style="color: inherit; text-decoration: none;">Contact Us</a></li>
+                        </ul>
                     </div>
-                </div>
-
-                <!-- Get In Touch Column -->
-                <div class="footer-col address-col">
-                    <h3
-                        style="font-family: var(--font-heading); font-size: 18px; margin-bottom: 25px; font-weight: 500;">
-                        Get In Touch</h3>
-
-                    <div style="margin-bottom: 20px;">
-                        <p style="margin-bottom: 5px; font-size: 15px; color: white;">Location</p>
-                        <p style="margin-bottom: 0; font-size: 13px; opacity: 0.8; line-height: 1.5;">Taran Taal Road,
-                            Civil Lines,<br>Prem Nagar, Sitapur, UP</p>
-                    </div>
-
-                    <div>
-                        <p style="margin-bottom: 5px; font-size: 15px; color: white;">Email</p>
-                        <p style="margin-bottom: 0; font-size: 13px; opacity: 0.8;">contact@varnikahealthcare.com</p>
-                    </div>
-                </div>
-
-                <!-- Quick Links Column -->
-                <div class="footer-col links-col">
-                    <h3
-                        style="font-family: var(--font-heading); font-size: 18px; margin-bottom: 25px; font-weight: 500;">
-                        Quick Link</h3>
-                    <ul style="font-size: 14px; opacity: 0.9;">
-                        <li style="margin-bottom: 12px;"><a href="index.html">Home</a></li>
-                        <li style="margin-bottom: 12px;"><a href="about.html">About Us</a></li>
-                        <li style="margin-bottom: 12px;"><a href="services.html">Services</a></li>
-                        <li style="margin-bottom: 12px;"><a href="contact.html">Contact Us</a></li>
-                    </ul>
                 </div>
             </div>
-        </div>
 
-        <div class="footer-bottom-flex"
-            style="padding: 25px 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 0 40px;">
-            <div class="container"
-                style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-                <p style="margin: 0; font-size: 13px; opacity: 0.9;">Copyright &copy; 2026 All Rights Reserved.</p>
-                <div class="social-links" style="display: flex; align-items: center; gap: 15px;">
-                    <span style="font-size: 14px; margin-right: 5px;">Follow Us On Social</span>
-                    <a href="#"
-                        style="background: white; color: var(--primary-green); width: 32px; height: 32px; border-radius: 5px;"><i
-                            class="fa-solid fa-globe"></i></a>
-                    <a href="#"
-                        style="background: white; color: var(--primary-green); width: 32px; height: 32px; border-radius: 5px;"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"
-                        style="background: white; color: var(--primary-green); width: 32px; height: 32px; border-radius: 5px;"><i
-                            class="fa-brands fa-instagram"></i></a>
+            <div class="footer-bottom-flex"
+                style="padding: 25px 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 0 40px;">
+                <div class="container"
+                    style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                    <p style="margin: 0; font-size: 13px; font-family: var(--font-body); opacity: 0.9;">Copyright &copy;
+                        2026 All Rights Reserved.</p>
+                    <div class="social-links-footer" style="display: flex; gap: 10px; align-items: center;">
+                        <span style="font-size: 14px; margin-right: 5px;">Follow Us On Social</span>
+                        <a href="#"
+                            style="background: white; color: var(--primary-green); width: 32px; height: 32px; border-radius: 5px; display: flex; align-items: center; justify-content: center; text-decoration: none;"><i
+                                class="fa-solid fa-globe"></i></a>
+                        <a href="#"
+                            style="background: white; color: var(--primary-green); width: 32px; height: 32px; border-radius: 5px; display: flex; align-items: center; justify-content: center; text-decoration: none;"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"
+                            style="background: white; color: var(--primary-green); width: 32px; height: 32px; border-radius: 5px; display: flex; align-items: center; justify-content: center; text-decoration: none;"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <!-- Scripts -->
     <script src="Assets/JS/script.js"></script>

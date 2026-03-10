@@ -65,3 +65,38 @@
         font-size: 40px;
     }
 }
+
+/* ==========================================================================
+   Doctor Profile Layout
+   ========================================================================== */
+.doc-profile-grid .team-social-btn:hover {
+    background: var(--primary-green) !important;
+    color: var(--white) !important;
+    transform: translateY(-3px);
+}
+
+.skill-bar {
+    margin-bottom: 25px;
+}
+
+.skill-bar:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    .doc-profile-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+
+    .doc-expertise-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        padding: 30px !important;
+    }
+
+    .doc-details-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+}
