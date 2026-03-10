@@ -93,15 +93,19 @@
 .footer {
     background-color: var(--primary-green);
     color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    overflow: hidden;
 }
 
 .footer-top {
     padding: 80px 0 50px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .footer-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: 1.5fr 1.2fr 1.2fr 1fr;
     gap: 40px;
 }
 
@@ -110,97 +114,27 @@
     margin-bottom: 25px;
 }
 
-.brand-col p {
-    margin-bottom: 25px;
-    line-height: 1.8;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-}
-
-.social-links a {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--white);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    background-color: var(--white);
-    color: var(--primary-green);
-    transform: translateY(-3px);
-}
-
-.footer-col h3 {
-    color: var(--white);
-    font-size: 20px;
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-.footer-col h3::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    background-color: var(--accent-green);
-}
-
-.links-col ul li,
-.services-col ul li {
+.links-col ul li {
     margin-bottom: 12px;
 }
 
-.links-col a,
-.services-col a {
+.links-col a {
     transition: var(--transition);
 }
 
-.links-col a:hover,
-.services-col a:hover {
+.links-col a:hover {
     color: var(--white);
     padding-left: 5px;
 }
 
-.contact-col p {
-    margin-bottom: 20px;
+.footer-bottom-flex {
+    position: relative;
+    z-index: 2;
 }
 
-.footer-contact-info p {
-    color: var(--white);
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.footer-contact-info p i {
-    color: var(--accent-green);
-    margin-right: 15px;
-    font-size: 20px;
-}
-
-.footer-bottom {
-    background-color: #532c1f;
-    /* Darker green */
-    padding: 25px 0;
-    text-align: center;
-}
-
-.footer-bottom p {
-    margin: 0;
-    font-size: 14px;
+.subscribe-form button:hover {
+    background: #3a1e15 !important;
+    /* Darker shade of primary green for hover */
 }
 
 /* Responsive Overrides */
@@ -217,5 +151,10 @@
 @media (max-width: 767px) {
     .footer-container {
         grid-template-columns: 1fr;
+    }
+
+    .footer-bottom-flex .container {
+        flex-direction: column;
+        gap: 20px;
     }
 }

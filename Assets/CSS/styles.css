@@ -240,8 +240,15 @@ section {
 /* ==========================================================================
    Hero Section
    ========================================================================== */
-.hero {
+.hero,
+.services-section,
+.benefits-section,
+.before-after-section {
     position: relative;
+    overflow: hidden;
+}
+
+.hero {
     height: 100vh;
     min-height: 600px;
     display: flex;
@@ -329,6 +336,194 @@ section {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* ==========================================================================
+   Before & After Slider Section
+   ========================================================================== */
+.before-after-section {
+    padding: 80px 0;
+}
+
+.ba-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .ba-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.ba-container {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.ba-images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ba-images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.img-before {
+    clip-path: inset(0 50% 0 0);
+    z-index: 2;
+}
+
+.img-after {
+    z-index: 1;
+}
+
+.ba-divider {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    pointer-events: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.ba-slider {
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.ba-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-green) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" fill="white"><path d="M377.941 169.941V216H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.568 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296h243.882v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.568 0-33.941l-86.059-86.059c-15.119-15.12-40.971-4.412-40.971 16.97z"/></svg>') no-repeat center center;
+    border: 3px solid white;
+    cursor: ew-resize;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    pointer-events: auto;
+}
+
+.ba-slider::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-green) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" fill="white"><path d="M377.941 169.941V216H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.568 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296h243.882v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.568 0-33.941l-86.059-86.059c-15.119-15.12-40.971-4.412-40.971 16.97z"/></svg>') no-repeat center center;
+    border: 3px solid white;
+    cursor: ew-resize;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    pointer-events: auto;
+}
+
+/* ==========================================================================
+   Background Shapes & Animations
+   ========================================================================== */
+.bg-shape {
+    position: absolute;
+    z-index: 10;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.hero .bg-shape {
+    opacity: 0.8;
+}
+
+.shape-1 {
+    top: 25%;
+    left: 10%;
+    animation: floatShape 8s ease-in-out infinite;
+}
+
+.shape-2 {
+    bottom: 30%;
+    right: 15%;
+    animation: floatShape 6s ease-in-out infinite reverse;
+}
+
+.shape-3 {
+    top: 60%;
+    left: 80%;
+    animation: floatShape 10s ease-in-out infinite;
+}
+
+.shape-4 {
+    top: 80%;
+    left: 20%;
+    animation: floatShape 7s ease-in-out infinite reverse;
+}
+
+.shape-5 {
+    top: 15%;
+    right: 15%;
+    animation: floatShape 9s ease-in-out infinite;
+}
+
+.shape-6 {
+    top: 30%;
+    left: 8%;
+    animation: floatShape 8s ease-in-out infinite reverse;
+}
+
+.shape-7 {
+    bottom: 20%;
+    right: 10%;
+    animation: floatShape 7s ease-in-out infinite;
+}
+
+.shape-8 {
+    top: 25%;
+    left: 15%;
+    animation: floatShape 6s ease-in-out infinite reverse;
+}
+
+.shape-9 {
+    bottom: 30%;
+    right: 15%;
+    animation: floatShape 9s ease-in-out infinite;
+}
+
+@keyframes floatShape {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(15deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
     }
 }
 

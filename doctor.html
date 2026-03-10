@@ -14,11 +14,13 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-components.css">
-    <link rel="stylesheet" href="styles-services.css">
-    <link rel="stylesheet" href="styles-footer.css">
-    <link rel="stylesheet" href="interior-pages.css">
+    <link rel="stylesheet" href="Assets/CSS/styles.css">
+    <link rel="stylesheet" href="Assets/CSS/styles-components.css">
+    <link rel="stylesheet" href="Assets/CSS/styles-services.css">
+    <link rel="stylesheet" href="Assets/CSS/styles-footer.css">
+    <link rel="stylesheet" href="Assets/CSS/interior-pages.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -134,59 +136,131 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="contact" class="footer" style="border-radius: 20px 20px 0 0; margin-top: 50px;">
+        <!-- Background SVG Decorations -->
+        <svg class="bg-shape shape-leaf" style="bottom: 0; left: 0; opacity: 0.1; width: 150px; height: 150px;"
+            viewBox="0 0 24 24" fill="none" stroke="var(--white)" stroke-width="1">
+            <path d="M12 2C8 2 4 6 4 12c0 6 8 10 8 10s8-4 8-10C20 6 16 2 12 2z" />
+        </svg>
+        <svg class="bg-shape shape-leaf"
+            style="top: 0; right: 0; opacity: 0.1; width: 150px; height: 150px; transform: scaleX(-1);"
+            viewBox="0 0 24 24" fill="none" stroke="var(--white)" stroke-width="1">
+            <path d="M12 2C8 2 4 6 4 12c0 6 8 10 8 10s8-4 8-10C20 6 16 2 12 2z" />
+        </svg>
+
         <div class="footer-top">
             <div class="container footer-container">
+                <!-- Brand & Subscribe Column -->
                 <div class="footer-col brand-col">
-                    <img src="Assets/logo-white.png" alt="Dermal Logo" class="footer-logo">
-                    <p>Expert dermatology care tailored to your unique skin and hair needs by Dr. Usha Chandra, Board
-                        Certified Dermatologist.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <img src="Assets/logo-white.png" alt="Dermal Logo" class="footer-logo"
+                            style="margin-bottom: 0; margin-right: 15px; height: 40px; background: white; border-radius: 50%; padding: 5px;">
+                        <h2
+                            style="color: white; margin: 0; font-family: var(--font-body); font-size: 24px; font-weight: 700;">
+                            Dermal.</h2>
+                    </div>
+                    <p style="font-size: 14px; opacity: 0.9; margin-bottom: 25px; line-height: 1.6;">With a passion for
+                        skin health, Dermal combines the latest technologies.</p>
+
+                    <div class="subscribe-form"
+                        style="display: flex; background: white; border-radius: 8px; padding: 5px; max-width: 300px;">
+                        <input type="email" placeholder="Enter your email"
+                            style="border: none; outline: none; padding: 10px 15px; width: 100%; border-radius: 5px; font-family: var(--font-body);">
+                        <button type="button"
+                            style="background: var(--primary-green); color: white; border: none; border-radius: 5px; width: 45px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
 
+                <!-- Contact Us Column -->
+                <div class="footer-col contact-col-new">
+                    <h3
+                        style="font-family: var(--font-heading); font-size: 18px; margin-bottom: 25px; font-weight: 500;">
+                        Contact Us</h3>
+
+                    <div class="footer-contact-item"
+                        style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                        <div class="fc-icon"
+                            style="background: white; color: var(--primary-green); width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div>
+                            <p style="margin-bottom: 2px; font-size: 15px; color: white;">For more information</p>
+                            <p style="margin-bottom: 0; font-size: 14px; opacity: 0.8;">+91 9580392068</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-contact-item" style="display: flex; align-items: flex-start;">
+                        <div class="fc-icon"
+                            style="background: white; color: var(--primary-green); width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div>
+                            <p style="margin-bottom: 2px; font-size: 15px; color: white;">Emergency toll free no</p>
+                            <p style="margin-bottom: 0; font-size: 14px; opacity: 0.8;">+91 7388687902</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Get In Touch Column -->
+                <div class="footer-col address-col">
+                    <h3
+                        style="font-family: var(--font-heading); font-size: 18px; margin-bottom: 25px; font-weight: 500;">
+                        Get In Touch</h3>
+
+                    <div style="margin-bottom: 20px;">
+                        <p style="margin-bottom: 5px; font-size: 15px; color: white;">Location</p>
+                        <p style="margin-bottom: 0; font-size: 13px; opacity: 0.8; line-height: 1.5;">Taran Taal Road,
+                            Civil Lines,<br>Prem Nagar, Sitapur, UP</p>
+                    </div>
+
+                    <div>
+                        <p style="margin-bottom: 5px; font-size: 15px; color: white;">Email</p>
+                        <p style="margin-bottom: 0; font-size: 13px; opacity: 0.8;">contact@varnikahealthcare.com</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
                 <div class="footer-col links-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="doctor.html">About Dr. Usha</a></li>
-                        <li><a href="services.html">Treatments</a></li>
-                        <li><a href="contact.html">Clinic Locations</a></li>
+                    <h3
+                        style="font-family: var(--font-heading); font-size: 18px; margin-bottom: 25px; font-weight: 500;">
+                        Quick Link</h3>
+                    <ul style="font-size: 14px; opacity: 0.9;">
+                        <li style="margin-bottom: 12px;"><a href="index.html">Home</a></li>
+                        <li style="margin-bottom: 12px;"><a href="about.html">About Us</a></li>
+                        <li style="margin-bottom: 12px;"><a href="services.html">Services</a></li>
+                        <li style="margin-bottom: 12px;"><a href="contact.html">Contact Us</a></li>
                     </ul>
-                </div>
-
-                <div class="footer-col services-col">
-                    <h3>Top Services</h3>
-                    <ul>
-                        <li><a href="services.html">Acne & Pimples</a></li>
-                        <li><a href="services.html">Pigmentation</a></li>
-                        <li><a href="services.html">Hair Fall Treatment</a></li>
-                        <li><a href="services.html">Anti-Aging</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col contact-col">
-                    <h3>Book Appointment</h3>
-                    <p>Ready to improve your skin health? Call us today to schedule your consultation.</p>
-                    <div class="footer-contact-info">
-                        <p><i class="fa-solid fa-phone"></i> +91 9580392068</p>
-                        <p><i class="fa-solid fa-phone"></i> +91 7388687902</p>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 Dr. Usha Chandra Dermatology Clinic. All Rights Reserved.</p>
+
+        <div class="footer-bottom-flex"
+            style="padding: 25px 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 0 40px;">
+            <div class="container"
+                style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                <p style="margin: 0; font-size: 13px; opacity: 0.9;">Copyright &copy; 2026 All Rights Reserved.</p>
+                <div class="social-links" style="display: flex; align-items: center; gap: 15px;">
+                    <span style="font-size: 14px; margin-right: 5px;">Follow Us On Social</span>
+                    <a href="#"
+                        style="background: white; color: var(--primary-green); width: 32px; height: 32px; border-radius: 5px;"><i
+                            class="fa-solid fa-globe"></i></a>
+                    <a href="#"
+                        style="background: white; color: var(--primary-green); width: 32px; height: 32px; border-radius: 5px;"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"
+                        style="background: white; color: var(--primary-green); width: 32px; height: 32px; border-radius: 5px;"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="Assets/JS/script.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
