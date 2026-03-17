@@ -1,0 +1,23 @@
+# robots.txt for https://drushachandraderma.com
+# Dr. Usha Chandra | Dermatologist - Sitapur & Shahjahanpur
+
+User-agent: *
+Allow: /
+
+# Allow all major search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow common non-index files and directories
+Disallow: /Assets/JS/
+Disallow: /Assets/CSS/
+Disallow: /*.py$
+
+# Sitemap location
+Sitemap: https://drushachandraderma.com/sitemap.xml
